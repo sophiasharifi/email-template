@@ -13,3 +13,11 @@ def retrieve_contacts(file){
 
     return contact_name, contact_email;
 }
+
+def read_template_file(file){
+    #opens the file
+    with open(file, mode = 'r', encoding = 'utf-8') as template_file:
+        read = template_file.read();
+
+    return Template(read);
+}
