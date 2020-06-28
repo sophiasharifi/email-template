@@ -21,3 +21,7 @@ def read_template_file(file){
 
     return Template(read);
 }
+
+def main(){
+    s = smtplib.SMTP(host='smtp.gmail.com', port=465);
+}
